@@ -36,7 +36,7 @@ export function initFireFoxDriver() {
 }
 
 export function initChromeDriver() {
-    driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chrome()).build();
+    driver = new webdriver.Builder().forBrowser('chrome').build();
     driver.manage().window().setSize(1280, 1000);
     return driver;
 }
